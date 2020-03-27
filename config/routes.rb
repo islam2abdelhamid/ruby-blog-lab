@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  root 'home#index'
-  get '/posts', to: 'post#index'
-  get '/posts/new', to: 'post#new'
+  post 'comments/create'
+  delete 'comments/destroy'
 
+  resources :posts  
+  root 'posts#index' 
 end

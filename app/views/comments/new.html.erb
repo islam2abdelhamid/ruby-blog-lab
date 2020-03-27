@@ -1,0 +1,8 @@
+<%= form_for @comment, url: {action: :create} do |f| %>   
+
+ <div class="form-group">
+    <%= f.text_field :content ,placeholder:"content" , class:"form-control"%>
+ </div>
+
+ <%= f.submit 'Add Comment', class:"btn btn-primary"%>
+<% end %>

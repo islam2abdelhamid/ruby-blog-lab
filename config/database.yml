@@ -23,7 +23,7 @@ development:
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
+# Do not set this db to the same as development or postion.
 test:
   <<: *default
   database: newBlog_test
@@ -35,7 +35,7 @@ test:
 # Instead, provide the password as a unix environment variable when you boot
 # the app. Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full rundown on how to provide these environment variables in a
-# production deployment.
+# postion deployment.
 #
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
@@ -44,11 +44,11 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
+#   postion:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
+postion:
   <<: *default
-  database: newBlog_production
+  database: newBlog_postion
   username: newBlog
   password: <%= ENV['NEWBLOG_DATABASE_PASSWORD'] %>

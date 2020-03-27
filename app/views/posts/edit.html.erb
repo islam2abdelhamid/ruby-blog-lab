@@ -1,0 +1,17 @@
+
+
+<%= "<div class='alert alert-danger'>#{@post.errors.full_messages.first}</div>".html_safe if @post.errors.any? %>   
+
+<%= form_for @post, url: {action: :update} do |f| %>   
+
+ <div class="form-group">
+    <%= f.text_field :title,placeholder:"title" ,class:"form-control"%>
+  </div>
+
+ <div class="form-group">
+    <%= f.text_field :content ,placeholder:"content" , class:"form-control"%>
+ </div>
+
+ <%= f.submit 'Create Post', class:"btn btn-primary"%>
+<% end %>
+</div>
